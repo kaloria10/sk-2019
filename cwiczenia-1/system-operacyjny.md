@@ -27,7 +27,8 @@ Schemat sieci
 aby załączyć obrazek 
 
 
-![alt schemat](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)![alt schemat](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
 
-![alt schemat](images/my-network-schema.png)
+
+![untitled diagram](https://user-images.githubusercontent.com/47742845/53301891-5c665a80-3858-11e9-8233-a038196ecfc4.jpg)
+
 
