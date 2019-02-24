@@ -17,9 +17,9 @@ Konfiguracja połączenia sieciowego
 | ------------- |:-------------:| -----:|
 | Adres IP      | 10.0.2.15 | przydzielony przez DHCP |
 | Maska podsieci      | 255.255.255.0  |  |
-| Brama      |  | 10.0.2.2  |
-| DNS 1      |  | 149.156.208.49  |
-| DNS 2      |  | 149.156.208.90  |
+| Brama      |  10.0.2.2   |  |
+| DNS 1      |  149.156.208.49  |   |
+| DNS 2      |  149.156.208.90  |   |
 
 Schemat sieci
 -------------
