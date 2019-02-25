@@ -12,7 +12,7 @@ Wejściowe parametry sieci
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
 |   PC 1 |  
-| IP - address  | | |
+| IP - address  | 10.0.2.15/24 | |
 | MASKA  | | |
 |   |  | |
 | PC 2  |  | |
