@@ -11,13 +11,13 @@ Wejściowe parametry sieci
 -------------------------
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
-|   PC 1 |  
-| IP - address  | 10.0.2.15/24 | |
-| MASKA  | | |
+|   PC 1 | debian 9.8 
+| IP - address  | 10.0.2.15 | |
+| MASKA  | /24 | |
 |   |  | |
-| PC 2  |  | |
-| IP - address  | | |
-| MASKA  | | |
+| PC 2  | centOS  | |
+| IP - address  | 192.168.10.5 | |
+| MASKA  | /24 | |
 
 Weryfikacja połączenia
 
@@ -81,10 +81,10 @@ Warto wiedzieć
 -------------------------
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
-| Lokalizacja pliku z konfiguracją sieci| | |
-| UP -> Wyłączenie interfejsu sieciowego| | |
-| DOWN -> Włączenie interfejsu sieciowego| | |
-| Sprawdzenie obecnych parametrów | | |
-| lista wszystkich interfejsów | | |
+| Lokalizacja pliku z konfiguracją sieci| /sbin | |
+| UP -> Wyłączenie interfejsu sieciowego| ifup | |
+| DOWN -> Włączenie interfejsu sieciowego|  ifdown | |
+| Sprawdzenie obecnych parametrów | ip a | |
+| lista wszystkich interfejsów |? ip addr | |
 | Które interfejsy jakie porty słuchają | | |
 
