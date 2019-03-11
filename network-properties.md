@@ -23,10 +23,12 @@ Weryfikacja połączenia
 
 Polecenie
 ```
+ping <adres ip>
 ```
 
 Efekt
 ```
+64 bytes from 172.16.100.11 icmp_seq=1 ttl=64 time=0.726 ms
 ```
 
 Statyczna konfiguracja parametrów połączenia
@@ -46,6 +48,7 @@ Weryfikacja połączenia
 
 Polecenie
 ```
+ping 
 ```
 
 Efekt
