@@ -32,6 +32,19 @@ Efekt
 ```
 
 Statyczna konfiguracja parametrów połączenia
+Żeby konfiguracja sieci na wirtualnych maszynach była zapisana po ich restarcie należy zapisać to w pliku w lokalizacji: /etc/network/interrfaces
+np.
+``Iface enp0s3 inet static
+Adress 192.168.100.1
+Netmask 255.255.255.0
+
+Auto enp0s8
+Iface enp0s8 inet static
+Adress 192.168.200.1
+Netmask 255.255.255.0
+Up ip route add 192.168.0.0/24 via 192.168.200.2
+Down ip route del 192.168.0.0/24``
+
 Wejściowe parametry sieci
 -------------------------
 | Parametr | wartość | komentarz(opcionalny) |
