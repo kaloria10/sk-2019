@@ -1,1 +1,1 @@
-![diagram](diagram.png)
+![diagram](diagram.svg)
