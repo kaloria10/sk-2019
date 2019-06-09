@@ -40,3 +40,48 @@ Ustalenie konfiguracji sieci dla:
 
 
 
+4. Ustawienie routingu na maszynach PC-1 i PC-2
+
+![](6.png)
+
+![](7.png)
+
+Sprawdzenie poprawności: 
+ip route show
+
+EFEKT:
+
+![](8.png)
+
+5. Ustawienie forwardowania (PC-0)
+
+  edycja pliku /etc/sysctl.d/99-sysctl.conf
+    należy odkomentować linijkę:
+    #Uncomment the next line to enable packet forwarding for IPv4
+      ![](10.png)
+      
+6. Dodanie masquerade (PC-0)
+
+Edycja pliku /etc/iptables.up.rules
+  Należy dopisać w tym pliku:
+  iptables -t nat -A POSTROUTING -s 172.22.128.0/23 -o enp0s3 -j MASQUERADE
+  iptables -t nat -A POSTROUTING -s 172.22.160.0/19 -o enp0s3 -j MASQUERADE
+  
+  A żeby te reguły były wczytywane przy starcie maszyny należy edytować plik 
+  
+  /etc/network/interfaces 
+  
+  dopisując na końcu: 
+    
+    post-up iptables-restore < /etc/iptables.up.rules
+
+7. Dodanie w pliku /etc/resolv.conf dla maszyn PC-1 i PC-2 adresów DNS:
+
+  nameserver 1.1.1.1
+
+
+
+
+
+
+
